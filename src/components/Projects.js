@@ -2,6 +2,35 @@ import React from "react";
 import "./Projects.css";
 
 function Projects(props) {
+  function displayRepos() {
+    if (props.repoBackLink) {
+      return (
+        <React.Fragment>
+          <a
+            href={props.repoFrontLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Front End
+          </a>{" - "}
+          <a
+            href={props.repoBackLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Back End
+          </a>
+        </React.Fragment>
+      );
+    } else {
+      return (
+        <a href={props.repoFrontLink} target="_blank" rel="noopener noreferrer">
+          Repo
+        </a>
+      );
+    }
+  }
+
   return (
     <div className="flip-card card">
       <div className="flip-card-inner">
@@ -23,14 +52,8 @@ function Projects(props) {
           <p>
             {props.description}
             <br />
-            <a
-              href="https://github.com/wchrapcynski/trivia_game"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Repo
-            </a>
-            {" - "}
+            {displayRepos()}
+            <br />
             <a href={props.appLink} target="_blank" rel="noopener noreferrer">
               Web App
             </a>

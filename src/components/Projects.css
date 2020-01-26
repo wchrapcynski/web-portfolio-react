@@ -113,3 +113,56 @@
 .flip-card-desc {
   display: none;
 }
+
+/* smartphones, touchscreens */
+@media (hover: none) and (pointer: coarse) {
+
+  .flip-card:hover .flip-card-inner {
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+  }
+
+  .flip-card-desc {
+    display: block;
+    text-align: center;
+  }
+
+  .card-group {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Medium devices */
+@media only screen and (max-width: 768px) {
+  .card-group {
+    align-items: center;
+    flex-direction: column;
+  }
+  .card {
+    margin: 20px 0;
+  }
+
+  .flip-card,
+  .flip-card-inner {
+    width: 45vw;
+    height: 45vw;
+  }
+
+  .flip-image {
+    width: 35vw;
+    height: 35vw;
+  }
+
+  .flip-card-back h2 {
+    font-size: 5vw;
+  }
+
+  .flip-card-back p {
+    font-size: 2.5vw;
+  }
+}
+
