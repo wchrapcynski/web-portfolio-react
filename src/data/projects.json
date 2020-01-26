@@ -1,0 +1,42 @@
+[
+	{
+		"name": "Mouse Fan Trivia",
+		"description": "Trivia game created with JS, CSS, and HTML.",
+		"repoFrontLink": "https://github.com/wchrapcynski/trivia_game",
+		"repoBackLink": "",
+		"appLink": "http://mousetrivia.magicaltech.xyz/",
+		"image": "mousetrivia-flip.png"
+	},
+	{
+		"name": "Tic-Tac-Toe",
+		"description": "The classic game created with JS, CSS, and HTML.",
+		"repoFrontLink": "https://github.com/wchrapcynski/Tic-Tac-Toe",
+		"repoBackLink": "",
+		"appLink": "http://tictactoe.magicaltech.xyz/",
+		"image": "tictactoe-flip.png"
+	},
+	{
+		"name": "Amiibo Catalog",
+		"description": "Nintendo Amiibo product list created with a MERN stack.",
+		"repoFrontLink": "https://github.com/wchrapcynski/Amiibo-Front-End",
+		"repoBackLink": "https://github.com/wchrapcynski/Amiibo-API",
+		"appLink": "https://nostalgic-mestorf-ce37f7.netlify.com/",
+		"image": "amiibo-flip.png"
+	},
+	{
+		"name": "Storybook Components",
+		"description": "A set of React components created using Storybook.",
+		"repoFrontLink": "https://github.com/wchrapcynski/component-library-project",
+		"repoBackLink": "",
+		"appLink": "https://vigorous-pare-bae683.netlify.com/",
+		"image": "storybook-flip.png"
+	},
+	{
+		"name": "Cotripper",
+		"description": "Large group progject from General Assembly using Agile technqiues. Contact me for more information on this project.",
+		"repoFrontLink": "https://github.com/CotripperPlatform/CoTrip",
+		"repoBackLink": "",
+		"appLink": "http://mousetrivia.magicaltech.xyz/",
+		"image": "cotripper-flip.png"
+	}
+]
