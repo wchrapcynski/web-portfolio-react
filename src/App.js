@@ -5,7 +5,6 @@ import Projects from "./components/Projects";
 
 function App() {
   const softwareProjects = require("./data/projects.json");
-
   const displayProjects = softwareProjects.map((data, key) => {
     return (
       <Projects
