@@ -16,7 +16,7 @@
 		"image": "tictactoe-flip.png"
 	},
 	{
-		"name": "Amiibo Catalog",
+		"name": "Amiibo List",
 		"description": "Nintendo Amiibo product list created with a MERN stack.",
 		"repoFrontLink": "https://github.com/wchrapcynski/Amiibo-Front-End",
 		"repoBackLink": "https://github.com/wchrapcynski/Amiibo-API",
