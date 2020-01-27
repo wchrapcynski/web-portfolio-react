@@ -102,8 +102,23 @@
   -o-transform: rotateY(180deg);
 }
 
+.flip-card-back h3 {
+  font-family: "Orbitron", sans-serif;
+}
+
 .flip-card-back a {
   color: blue;
+  transition: all 500ms ease;
+}
+
+.flip-card-back a:hover {
+  transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  text-decoration: none;
+  letter-spacing: 0.05em;
 }
 
 .flip-card-back h2 {

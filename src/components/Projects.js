@@ -27,7 +27,7 @@ function Projects(props) {
             </a>
           </div>
           <div className="flip-card-back">
-            <h2>{props.name}</h2>
+            <h3>{props.name}</h3>
             <p>
               	{props.description}
               	<br />
