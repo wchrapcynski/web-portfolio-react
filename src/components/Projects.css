@@ -128,6 +128,7 @@
   .flip-card-desc {
     display: block;
     text-align: center;
+    max-width: 400px;
   }
 
   .card-group {
