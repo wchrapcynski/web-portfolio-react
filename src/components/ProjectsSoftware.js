@@ -1,7 +1,7 @@
 import React from "react";
-import "./Projects.css";
+import "./components.css";
 
-function Projects(props) {
+function ProjectsSoftware(props) {
   function displayRepos() {
     if (props.repoBackLink) {
       	return (
@@ -53,4 +53,4 @@ function Projects(props) {
   );
 }
 
-export default Projects;
+export default ProjectsSoftware;

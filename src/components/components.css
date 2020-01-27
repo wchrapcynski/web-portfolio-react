@@ -1,3 +1,8 @@
+
+.card-row {
+  display: contents;
+}
+
 .card {
   border: 0px;
   display: flex;
@@ -31,7 +36,6 @@
 .flip-image {
   width: 17vw;
   height: 17vw;
-  border: 1px solid black;
 }
 
 .flip-card:hover .flip-card-inner {
@@ -181,4 +185,3 @@
     font-size: 2.5vw;
   }
 }
-

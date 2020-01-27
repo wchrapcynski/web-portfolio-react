@@ -1,0 +1,21 @@
+[
+	{
+		"name": "Mini Arcade",
+		"link": "https://www.youtube.com/watch?v=wwPKy6Gn710",
+		"image": "icon-arcade.png",
+		"description": "I'm a maker and I enjoy building something with my own two hands. This is a mini-arcade machine that I build using a Raspberry Pi and various prototyping techniques."
+	},
+	{
+		"name": "Vintage Computers",
+		"link": "https://www.youtube.com/watch?v=ewS6h8lYh14",
+		"image": "icon-c64.png",
+		"description": "I have a passion for vintage computers and video game consoles. They hold a special kind of magic that I enjoy keeping alive using my electronics background."
+	},
+	{
+		"name": "Sound Design",
+		"link": "https://www.youtube.com/watch?v=Q1EhAeHvVd4",
+		"image": "icon-springcan.png",
+		"description": "As a sound designer and composer, I enjoy experimenting with creating audio for games, music, videos, and live theatre. I've also been involved in creating virtual instruments and sampling projects."
+	}
+
+]
