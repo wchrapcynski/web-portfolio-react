@@ -29,7 +29,7 @@ function App() {
         <hr className="rule" />
         <div className="card-row">{displayProjectsSoftware}</div>
       </div>
-      <div className="portfolio-projects card-group container">
+      <div className="portfolio-projects card-group">
         <div className="headline-text">Greetings Program</div>
         <hr className="rule" />
         <p>

@@ -147,6 +147,9 @@ h5 a{
 
 /* smartphones, touchscreens */
 @media (hover: none) and (pointer: coarse) {
+  .lead {
+    padding: 0;
+  }
 
   .flip-card:hover .flip-card-inner {
     transform: none;
@@ -159,15 +162,34 @@ h5 a{
   .flip-card-desc {
     display: block;
     text-align: center;
-    max-width: 400px;
   }
 
+  h5 {
+    font-size: 1.1em;
+  }
+  .click-desc {
+    font-size: 8px;
+    text-align: center;
+  }
   .card-group {
     flex-direction: column;
     align-items: center;
   }
 }
 
+/* Large devices */
+@media only screen and (max-width: 992px) {
+  .jumboMain {
+    flex-direction: column;
+    text-align: center;
+  }
+  .rightJumbo {
+    margin-top: 40px;
+  }
+  .rightJumbo img {
+    width: 60vw;
+  }
+}
 /* Medium devices */
 @media only screen and (max-width: 768px) {
   .card-group {
@@ -195,5 +217,36 @@ h5 a{
 
   .flip-card-back p {
     font-size: 2.5vw;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}
+/* Small large devices */
+@media only screen and (max-width: 576px) {
+  .display-4 {
+    font-size: 1.8rem;
+  }
+
+  .jumbotron {
+    padding: 20px 0;
+    margin-top: 20px;
+  }
+
+  .jumbotron p {
+    font-size: 1rem;
+  }
+
+  .rightJumbo {
+    margin-top: 20px;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
   }
 }
