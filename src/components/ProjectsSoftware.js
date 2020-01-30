@@ -5,10 +5,10 @@ function ProjectsSoftware(props) {
   function displayRepos() {
     if (props.repoBackLink) {
       	return (
-		<React.Fragment>
+		<>
 			<a href={props.repoFrontLink} target="_blank" rel="noopener noreferrer">Front End</a>{" - "}
 			<a href={props.repoBackLink} target="_blank" rel="noopener noreferrer">Back End</a>
-		</React.Fragment>
+		</>
 		);
     } else {
     	return (
@@ -17,7 +17,7 @@ function ProjectsSoftware(props) {
 	}
 
   return (
-    <React.Fragment>
+    <>
       <div className="flip-card card">
         <div className="flip-card-inner">
           <div className="flip-card-front card-body">
@@ -49,7 +49,7 @@ function ProjectsSoftware(props) {
             Web App</a>: ""}
         </p>
       </div>
-    </React.Fragment>
+    </>
   );
 }
 

@@ -3,7 +3,7 @@ import "./components.css"
 
 function ProjectsMaker(props) {
   return (
-    <React.Fragment>
+    <>
       <div className="card">
         <a
           href={props.link}
@@ -28,7 +28,7 @@ function ProjectsMaker(props) {
           </p>
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 }
 

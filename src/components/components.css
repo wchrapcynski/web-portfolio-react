@@ -145,6 +145,11 @@ h5 a{
   margin-right: 10px;
 }
 
+.footer {
+  margin: 20px auto;
+  text-align: center;
+}
+
 /* smartphones, touchscreens */
 @media (hover: none) and (pointer: coarse) {
   .lead {
