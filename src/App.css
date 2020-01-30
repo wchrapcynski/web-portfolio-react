@@ -28,3 +28,9 @@
   width: 70vw;
   margin: 0 auto;
 }
+
+@media (hover: none) and (pointer: coarse) {
+  .portfolio-projects {
+    max-width: 400px;
+  }
+}
