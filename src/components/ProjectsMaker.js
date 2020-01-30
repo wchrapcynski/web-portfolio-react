@@ -2,38 +2,32 @@ import React from 'react';
 import "./components.css"
 
 function ProjectsMaker(props) {
-
-	return (
+  return (
     <React.Fragment>
-          <div class="card">
+      <div className="card">
+        <a
+          href={props.link}
+          target="_blank" rel="noopener noreferrer">
+          <img
+            src={require(`../images/${props.image}`)}
+            className="card-img-top"
+            alt="mini arcade"
+            title="Click for video" />
+        </a>
+        <div className="card-body">
+          <h5 className="card-title">
             <a
-              href="https://www.youtube.com/watch?v=wwPKy6Gn710"
-              target="_blank"
-            >
-              <img
-                src={require("../images/icon-arcade.png")}
-                class="card-img-top"
-                alt="mini arcade"
-                title="Click for video"
-              />
+              href={props.link}
+              target="_blank" rel="noopener noreferrer">
+              <img className="card-youtube-icon" src={require("../images/youtube.png")} alt="Youtube Link" />
+              {props.name}
             </a>
-            <div class="card-body">
-              <h5 class="card-title">
-                <a
-                  href="https://www.youtube.com/watch?v=wwPKy6Gn710"
-                  target="_blank"
-                >
-                  <img src={require("../images/youtube.png")} alt="Youtube Link" /> Mini
-                  Arcade</a
-                >
-              </h5>
-              <p class="card-text">
-                I'm a maker and I enjoy building something with my own two
-                hands. This is a mini-arcade machine that I build using a
-                Raspberry Pi and various prototyping techniques.
-              </p>
-            </div>
-          </div>
+          </h5>
+          <p className="card-text">
+            {props.description}
+          </p>
+        </div>
+      </div>
     </React.Fragment>
   );
 }

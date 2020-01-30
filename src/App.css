@@ -24,7 +24,7 @@
 .portfolio-projects {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: 70vw;
   margin: 0 auto;
 }

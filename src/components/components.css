@@ -1,4 +1,12 @@
 
+h5 a{
+  transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+}
+
 .card-row {
   display: contents;
 }
@@ -115,14 +123,14 @@
   transition: all 500ms ease;
 }
 
-.flip-card-back a:hover {
+.flip-card-back a:hover, h5 a:hover {
   transition: all 500ms ease;
   -webkit-transition: all 500ms ease;
   -moz-transition: all 500ms ease;
   -ms-transition: all 500ms ease;
   -o-transition: all 500ms ease;
   text-decoration: none;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
 }
 
 .flip-card-back h2 {
@@ -131,6 +139,10 @@
 
 .flip-card-desc {
   display: none;
+}
+
+.card-youtube-icon {
+  margin-right: 10px;
 }
 
 /* smartphones, touchscreens */
