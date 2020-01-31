@@ -1,5 +1,97 @@
+.jumbotron {
+  border: 1px solid rgb(214, 212, 212);
+  width: 75vw;
+  margin-top: 50px;
+  padding: 50px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(214, 212, 212) 0%,
+    #e9ecef 100%
+  );
+  background-image: -o-linear-gradient(
+    to bottom,
+    rgb(214, 212, 212) 0%,
+    #e9ecef 100%
+  );
+  background-image: -moz-linear-gradient(
+    to bottom,
+    rgb(214, 212, 212) 0%,
+    #e9ecef 100%
+  );
+  background-image: -webkit-linear-gradient(
+    to bottom,
+    rgb(214, 212, 212) 0%,
+    #e9ecef 100%
+  );
+  background-image: -ms-linear-gradient(
+    to bottom,
+    rgb(214, 212, 212) 0%,
+    #e9ecef 100%
+  );
+}
 
-h5 a{
+.jumbo-email {
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.jumbo-email:hover {
+  text-decoration: none;
+}
+
+.social-media {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 70px;
+}
+
+.social-media-img {
+  margin: 0 5px;
+}
+
+.social-media-img img {
+  width: 45px;
+}
+
+.lead {
+  padding-right: 20px;
+}
+
+.rightJumbo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightJumbo img {
+  border-radius: 8px;
+  border: 1px solid black;
+  padding-top: 10px;
+  box-shadow: 2px 2px 5px grey;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.jumboMain {
+  display: flex;
+  flex-direction: row;
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 10px;
+  font-family: "Orbitron", sans-serif;
+}
+
+h5 a {
   transition: all 500ms ease;
   -webkit-transition: all 500ms ease;
   -moz-transition: all 500ms ease;
@@ -123,7 +215,8 @@ h5 a{
   transition: all 500ms ease;
 }
 
-.flip-card-back a:hover, h5 a:hover {
+.flip-card-back a:hover,
+h5 a:hover {
   transition: all 500ms ease;
   -webkit-transition: all 500ms ease;
   -moz-transition: all 500ms ease;
@@ -184,6 +277,9 @@ h5 a{
 
 /* Large devices */
 @media only screen and (max-width: 992px) {
+  .social-media {
+    justify-content: center;
+  }
   .jumboMain {
     flex-direction: column;
     text-align: center;
@@ -224,7 +320,7 @@ h5 a{
     font-size: 2.5vw;
   }
 
-  h1 {
+  .display-4 {
     font-size: 3rem;
   }
 }

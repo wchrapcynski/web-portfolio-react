@@ -1,6 +1,8 @@
 import React from "react";
+import { BrowserRouter, Route } from "react-router-dom";
 import "./App.css";
 import "./bootstrap.min.css";
+import Header from "./components/Header";
 import ProjectsSoftware from "./components/ProjectsSoftware";
 import ProjectsMaker from "./components/ProjectsMaker";
 import Footer from "./components/Footer";
@@ -36,28 +38,32 @@ function App() {
   });
 
   return (
-    <>
-      <div className='App'>
-        <div className='portfolio-projects card-group'>
-          <div className='headline-text'>Software Engineering Projects</div>
-          <hr className='rule' />
-          <div className='card-row'>{displayProjectsSoftware}</div>
-        </div>
-        <div className='portfolio-projects card-group'>
-          <div className='headline-text'>Greetings Program</div>
-          <hr className='rule' />
-          <p>
-            This engineer is more than meets the eye. There are a number of
-            paths that lead into the world of software development. Here are
-            just a sample of the things that got me to where I am today:
-          </p>
-          <div className='portfolio-projects card-group container'>
-            {displayProjectsMaker}
+    <BrowserRouter>
+      <Route path='/' exact />
+      <>
+        <Header />
+        <div className='App'>
+          <div className='portfolio-projects card-group'>
+            <div className='headline-text'>Software Engineering Projects</div>
+            <hr className='rule' />
+            <div className='card-row'>{displayProjectsSoftware}</div>
+          </div>
+          <div className='portfolio-projects card-group'>
+            <div className='headline-text'>Greetings Program</div>
+            <hr className='rule' />
+            <p>
+              This engineer is more than meets the eye. There are a number of
+              paths that lead into the world of software development. Here are
+              just a sample of the things that got me to where I am today:
+            </p>
+            <div className='portfolio-projects card-group container'>
+              {displayProjectsMaker}
+            </div>
           </div>
         </div>
-      </div>
-      <Footer></Footer>
-    </>
+        <Footer />
+      </>
+    </BrowserRouter>
   );
 }
 
