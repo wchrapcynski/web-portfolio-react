@@ -7,6 +7,7 @@ function Header() {
   const displaySocialMediaLinks = socialMediaLinks.map((data, key) => {
     return (
       <SocialMedia
+				key={key}
         name={data.name}
         link={data.link}
         image={data.image}

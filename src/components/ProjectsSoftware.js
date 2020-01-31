@@ -12,7 +12,7 @@ function ProjectsSoftware(props) {
 		);
     } else {
     	return (
-		<a href={props.repoFrontLink} target="_blank" rel="noopener noreferrer">Repo</a>
+		<a href={props.repoFrontLink} target="_blank" rel="noopener noreferrer">Code Repo</a>
 		);}
 	}
 
