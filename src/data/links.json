@@ -1,0 +1,26 @@
+[
+	{
+		"name": "linkedin",
+		"link": "https://www.linkedin.com/in/william-chrapcynski/",
+		"image": "socialmedia-linkedin.svg",
+		"external": "true"
+	},
+	{
+		"name": "github",
+		"link": "https://github.com/wchrapcynski'",
+		"image": "socialmedia-github.svg",
+		"external": "true"
+	},
+	{
+		"name": "medium",
+		"link": "https://medium.com/@williamchrapcynski",
+		"image": "socialmedia-medium.svg",
+		"external": "true"
+	},
+	{
+		"name": "resume",
+		"link": "./WilliamChrapcynski-Resume-se.pdf",
+		"image": "resume.svg",
+		"external": "false"
+	}
+]

@@ -1,8 +1,20 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./components.css";
+import SocialMedia from "./SocialMedia";
 
 function Header() {
+  const socialMediaLinks = require("../data/links.json");
+  const displaySocialMediaLinks = socialMediaLinks.map((data, key) => {
+    return (
+      <SocialMedia
+        name={data.name}
+        link={data.link}
+        image={data.image}
+        external={data.external}
+      />
+    );
+  });
+
   return (
     <>
       <div className='jumbotron container-fluid'>
@@ -18,51 +30,12 @@ function Header() {
               perspective that can visualize the big picture and the ability to
               make the magic happen.
               <br />
-              <a className='jumbo-email' href='mailto:wchrapcynski@gmail.com'>wchrapcynski@gmail.com</a>
+              <a className='jumbo-email' href='mailto:wchrapcynski@gmail.com'>
+                wchrapcynski@gmail.com
+              </a>
             </p>
             <div className='social-media'>
-              <div className='social-media-img'>
-                <a
-                  href='https://www.linkedin.com/in/william-chrapcynski/'
-                  target='_blank'
-                  rel='noopener noreferrer'>
-                  <img
-                    src={require("../images/socialmedia-linkedin.svg")}
-                    alt='linkedin'
-                  />
-                </a>
-              </div>
-              <div className='social-media-img'>
-                <a
-                  href='https://github.com/wchrapcynski'
-                  target='_blank'
-                  rel='noopener noreferrer'>
-                  <img
-                    src={require("../images/socialmedia-github.svg")}
-                    alt='linkedin'
-                  />
-                </a>
-              </div>
-              <div className='social-media-img'>
-                <a
-                  href='https://medium.com/@williamchrapcynski'
-                  target='_blank'
-                  rel='noopener noreferrer'>
-                  <img
-                    src={require("../images/socialmedia-medium.svg")}
-                    alt='linkedin'
-                  />
-                </a>
-              </div>
-              <div className='social-media-img'>
-                <Link
-                  to='./WilliamChrapcynski-Resume-se.pdf'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  download>
-                  <img src={require("../images/resume.svg")} alt='resume' />
-                </Link>
-              </div>
+              {displaySocialMediaLinks}
             </div>
           </div>
           <div className='rightJumbo'>
