@@ -8,11 +8,17 @@ function ProjectsSoftware(props) {
 		<>
 			<a href={props.repoFrontLink} target="_blank" rel="noopener noreferrer">Front End</a>{" - "}
 			<a href={props.repoBackLink} target="_blank" rel="noopener noreferrer">Back End</a>
+      <br />
+      {props.appLink ? <a href={props.appLink} target="_blank" rel="noopener noreferrer">Web App</a>: ""}
 		</>
 		);
     } else {
     	return (
-		<a href={props.repoFrontLink} target="_blank" rel="noopener noreferrer">Code Repo</a>
+    <>
+      <a href={props.repoFrontLink} target="_blank" rel="noopener noreferrer">Code Repo</a>
+      <br />
+      {props.appLink ? <a href={props.appLink} target="_blank" rel="noopener noreferrer">Web App</a>: ""}
+    </>
 		);}
 	}
 
@@ -29,11 +35,9 @@ function ProjectsSoftware(props) {
           <div className="flip-card-back">
             <h3>{props.name}</h3>
             <p>
-              	{props.description}
-              	<br />
-              	{displayRepos()}
-             	<br />
-              	{props.appLink ? <a href={props.appLink} target="_blank" rel="noopener noreferrer">Web App</a>: ""}
+              {props.description}
+              <br />
+              {displayRepos()}
             </p>
           </div>
         </div>
@@ -44,9 +48,6 @@ function ProjectsSoftware(props) {
         	{props.description}
         	<br />
         	{displayRepos()}
-        	<br />
-			{props.appLink ? <a href={props.appLink} target="_blank" rel="noopener noreferrer">
-            Web App</a>: ""}
         </p>
       </div>
     </>
