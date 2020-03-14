@@ -292,6 +292,10 @@ h5 a:hover {
     padding: 0;
   }
 
+  .social-media-text {
+    color: rgba(10, 10, 10, 1);
+  }
+
   .flip-card:hover .flip-card-inner {
     transform: none;
     -webkit-transform: none;
