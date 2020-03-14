@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
 import "./App.css";
 import "./bootstrap.min.css";
 import Header from "./components/Header";
@@ -38,8 +37,6 @@ function App() {
   });
 
   return (
-    <BrowserRouter>
-      <Route path='/' exact />
       <>
         <Header />
         <div className='App'>
@@ -63,7 +60,6 @@ function App() {
         </div>
         <Footer />
       </>
-    </BrowserRouter>
   );
 }
 

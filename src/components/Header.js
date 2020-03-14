@@ -11,7 +11,6 @@ function Header() {
         name={data.name}
         link={data.link}
         image={data.image}
-        external={data.external}
       />
     );
   });
