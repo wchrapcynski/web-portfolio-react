@@ -4,6 +4,7 @@ import "./bootstrap.min.css";
 import Header from "./components/Header";
 import ProjectsSoftware from "./components/ProjectsSoftware";
 import ProjectsMaker from "./components/ProjectsMaker";
+import BlogThree from "./components/BlogThree";
 import Footer from "./components/Footer";
 
 function App() {
@@ -58,6 +59,7 @@ function App() {
             </div>
           </div>
         </div>
+        <BlogThree />
         <Footer />
       </>
   );
