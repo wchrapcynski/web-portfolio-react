@@ -483,6 +483,9 @@ h5 a:hover {
 }
 
 @media only screen and (max-width: 320px) {
+  .jumbotron {
+    width: 90vw;
+  }
   .blog-title, .blog-created {
     font-size: 0.9em;
   }
