@@ -4,7 +4,7 @@ import "./bootstrap.min.css";
 import Header from "./components/Header";
 import ProjectsSoftware from "./components/ProjectsSoftware";
 import ProjectsMaker from "./components/ProjectsMaker";
-import BlogThree from "./components/BlogThree";
+import Blog from "./components/Blog";
 import Footer from "./components/Footer";
 
 function App() {
@@ -59,7 +59,9 @@ function App() {
             </div>
           </div>
         </div>
-        <BlogThree />
+        <div className='headline-text'>Blog</div>
+        <hr className='rule' />
+        <Blog />
         <Footer />
       </>
   );

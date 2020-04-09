@@ -281,6 +281,85 @@ h5 a:hover {
   margin-right: 10px;
 }
 
+.blog {
+  width: 600px;
+  margin: 10px auto;
+  border: 1px solid rgb(214, 212, 212);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(214, 212, 212) 0%,
+    #e9ecef 100%
+  );
+  background-image: -o-linear-gradient(
+    to bottom,
+    rgb(214, 212, 212) 0%,
+    #e9ecef 100%
+  );
+  background-image: -moz-linear-gradient(
+    to bottom,
+    rgb(214, 212, 212) 0%,
+    #e9ecef 100%
+  );
+  background-image: -webkit-linear-gradient(
+    to bottom,
+    rgb(214, 212, 212) 0%,
+    #e9ecef 100%
+  );
+  background-image: -ms-linear-gradient(
+    to bottom,
+    rgb(214, 212, 212) 0%,
+    #e9ecef 100%
+  );
+}
+
+.blog-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid rgb(214, 212, 212);
+}
+
+.blog-title {
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+.blog-header a:hover {
+  text-decoration: none;
+}
+
+.blog-created {
+  font-size: 1.1em;
+}
+
+.blog-body {
+  padding: 10px;
+}
+
+.blog-text {
+
+}
+
+.blog-pagination {
+  margin: 0 auto;
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-pagination-next, .blog-pagination-previous {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
 .footer {
   margin: 20px auto;
   text-align: center;
