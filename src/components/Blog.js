@@ -39,42 +39,65 @@ function Blog() {
                 </div>
               </div>
               <div className="blog-body">
+                <div className="blog-illustration">
+                  <div className="blog-image"></div>
+                </div>
                 <div className="blog-text">{data.text}</div>
+              </div>
+              <div className="blog-footer">
+                <div className="blog-link">
+                  <a
+                    href={data.link && data.link}
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    {data.link && data.link}
+                  </a>
+                </div>
               </div>
             </div>
           );
         })
       );
 
-      if(blogListData.next) {
-        setNext(blogListData.next)
+      if (blogListData.next) {
+        setNext(blogListData.next);
       } else {
-        setNext(null)
+        setNext(null);
       }
 
-      if(blogListData.previous) {
-        setPrevious(blogListData.previous)
+      if (blogListData.previous) {
+        setPrevious(blogListData.previous);
       } else {
-        setPrevious(null)
+        setPrevious(null);
       }
     }
   }, [blogListData]);
 
   const nextPage = () => {
-    console.log("Done")
+    console.log("Done");
     setBlogListUrl(next);
-  }
+  };
 
   const previousPage = () => {
-    console.log("Done")
+    console.log("Done");
     setBlogListUrl(previous);
-  }
+  };
 
   return (
     <div>
       <div className="blog-pagination">
-        <button className="blog-pagination-previous" onClick={() => previousPage()} disabled={!previous}>Previous 5</button>
-        <button className="blog-pagination-next" onClick={() => nextPage()} disabled={!next}>Next 5</button>
+        <button
+          className="blog-pagination-previous"
+          onClick={() => previousPage()}
+          disabled={!previous}>
+          Previous 5
+        </button>
+        <button
+          className="blog-pagination-next"
+          onClick={() => nextPage()}
+          disabled={!next}>
+          Next 5
+        </button>
       </div>
       <div className="blog-display">{displayData}</div>
     </div>

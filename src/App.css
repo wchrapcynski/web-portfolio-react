@@ -29,8 +29,19 @@
   margin: 0 auto;
 }
 
+.portfolio-blog {
+  width: 70vw;
+  margin: 0 auto;
+}
+
 @media (hover: none) and (pointer: coarse) {
   .portfolio-projects {
     max-width: 400px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .portfolio-projects p {
+    font-size: 0.9em;
   }
 }

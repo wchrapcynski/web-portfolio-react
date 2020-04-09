@@ -38,32 +38,34 @@ function App() {
   });
 
   return (
-      <>
-        <Header />
-        <div className='App'>
-          <div className='portfolio-projects card-group'>
-            <div className='headline-text'>Software Engineering Projects</div>
-            <hr className='rule' />
-            <div className='card-row'>{displayProjectsSoftware}</div>
-          </div>
-          <div className='portfolio-projects card-group'>
-            <div className='headline-text'>Greetings Program</div>
-            <hr className='rule' />
-            <p>
-              This engineer is more than meets the eye. There are a number of
-              paths that lead into the world of software development. Here are
-              just a sample of the things that got me to where I am today:
-            </p>
-            <div className='portfolio-projects card-group container'>
-              {displayProjectsMaker}
-            </div>
+    <>
+      <Header />
+      <div className="App">
+        <div className="portfolio-projects card-group">
+          <div className="headline-text">Software Engineering Projects</div>
+          <hr className="rule" />
+          <div className="card-row">{displayProjectsSoftware}</div>
+        </div>
+        <div className="portfolio-projects card-group">
+          <div className="headline-text">Greetings Program</div>
+          <hr className="rule" />
+          <p>
+            This engineer is more than meets the eye. There are a number of
+            paths that lead into the world of software development. Here are
+            just a sample of the things that got me to where I am today:
+          </p>
+          <div className="portfolio-projects card-group container">
+            {displayProjectsMaker}
           </div>
         </div>
-        <div className='headline-text'>Blog</div>
-        <hr className='rule' />
-        <Blog />
-        <Footer />
-      </>
+        <div className="portfolio-blog">
+          <div className="headline-text">Blog</div>
+          <hr className="rule" />
+          <Blog />
+        </div>
+      </div>
+      <Footer />
+    </>
   );
 }
 

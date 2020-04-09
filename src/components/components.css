@@ -282,7 +282,7 @@ h5 a:hover {
 }
 
 .blog {
-  width: 600px;
+  width: 100%;
   margin: 10px auto;
   border: 1px solid rgb(214, 212, 212);
   border-radius: 10px;
@@ -337,17 +337,21 @@ h5 a:hover {
   font-size: 1.1em;
 }
 
-.blog-body {
+.blog-body, .blog-footer {
   padding: 10px;
 }
 
-.blog-text {
-
+.blog-image {
+  height:120px;
+  width: 120px;
+  border: 1px solid rgb(214, 212, 212);
+  float: left;
+  margin: 0 10px 0 0;
 }
 
 .blog-pagination {
   margin: 0 auto;
-  width: 600px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -450,7 +454,7 @@ h5 a:hover {
     font-size: 3rem;
   }
 }
-/* Small large devices */
+/* Small devices */
 @media only screen and (max-width: 576px) {
   .display-4 {
     font-size: 1.8rem;
@@ -475,5 +479,29 @@ h5 a:hover {
 
   h1 {
     font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .blog-title, .blog-created {
+    font-size: 0.9em;
+  }
+  .blog-image {
+    float: none;
+    margin-bottom: 5px;
+  }
+  .blog-illustration {
+    display: flex;
+    justify-content: center;
+  }
+  .blog-text, .card-body p, .leftJumbo {
+    font-size: 0.9em;
+  }
+  .leftJumbo p {
+    padding: 5px;
+    font-size: 1.1em;
+  }
+  .card-body {
+    padding: 5px;
   }
 }
