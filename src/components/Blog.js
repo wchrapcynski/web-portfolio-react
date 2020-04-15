@@ -6,9 +6,9 @@ function Blog() {
   const [displayData, setDisplayData] = useState(null);
   const [next, setNext] = useState(null);
   const [previous, setPrevious] = useState(null);
-  const [blogListUrl, setBlogListUrl] = useState("http://127.0.0.1:8000/");
+  const [blogListUrl, setBlogListUrl] = useState("http://wchrapcynski.pythonanywhere.com/");
   const [pageNumber, setPageNumber] = useState(1);
-  const [numberOfPages, setNumberOfPages] = useState();
+  const [numberOfPages, setNumberOfPages] = useState(null);
   const itemsPerPage = 5;
 
   const getPosts = (url) => {
@@ -37,7 +37,7 @@ function Blog() {
                 <div className="blog-title">{data.title}</div>
                 <div className="blog-created">
                   {date.toString().substring(0, 10)},{" "}
-                  {date.toString().substring(11, 15)}{" "}
+                  {date.toString().substring(11, 15)}
                 </div>
               </div>
               <div className="blog-body">
@@ -63,14 +63,12 @@ function Blog() {
 
       if (blogListData.next) {
         setNext(blogListData.next);
-        setPageNumber(pageNumber + 1);
       } else {
         setNext(null);
       }
 
       if (blogListData.previous) {
         setPrevious(blogListData.previous);
-        setPageNumber(pageNumber - 1);
       } else {
         setPrevious(null);
       }
@@ -80,13 +78,13 @@ function Blog() {
   }, [blogListData, pageNumber]);
 
   const nextPage = () => {
-    console.log("Done");
     setBlogListUrl(next);
+    setPageNumber(pageNumber + 1);
   };
 
   const previousPage = () => {
-    console.log("Done");
     setBlogListUrl(previous);
+    setPageNumber(pageNumber - 1);
   };
 
   return (

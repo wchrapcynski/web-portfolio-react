@@ -339,6 +339,7 @@ h5 a:hover {
 
 .blog-body, .blog-footer {
   padding: 10px;
+  min-height: 80px;
 }
 
 .blog-image {
