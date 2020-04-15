@@ -6,7 +6,9 @@ function Blog() {
   const [displayData, setDisplayData] = useState(null);
   const [next, setNext] = useState(null);
   const [previous, setPrevious] = useState(null);
-  const [blogListUrl, setBlogListUrl] = useState("http://wchrapcynski.pythonanywhere.com/");
+  const [blogListUrl, setBlogListUrl] = useState(
+    "http://wchrapcynski.pythonanywhere.com/"
+  );
   const [pageNumber, setPageNumber] = useState(1);
   const [numberOfPages, setNumberOfPages] = useState(null);
   const itemsPerPage = 5;
@@ -31,33 +33,37 @@ function Blog() {
       setDisplayData(
         blogListData.results.map((data, key) => {
           let date = new Date(data.created_date);
-          return (
-            <div className="blog" key={key}>
-              <div className="blog-header">
-                <div className="blog-title">{data.title}</div>
-                <div className="blog-created">
-                  {date.toString().substring(0, 10)},{" "}
-                  {date.toString().substring(11, 15)}
+          if (data.published) {
+            return (
+              <div className="blog" key={key}>
+                <div className="blog-header">
+                  <div className="blog-title">{data.title}</div>
+                  <div className="blog-created">
+                    {date.toString().substring(0, 10)},{" "}
+                    {date.toString().substring(11, 15)}
+                  </div>
+                </div>
+                <div className="blog-body">
+                  <div className="blog-illustration">
+                    <div className={data.image ? "blog-image" : "hidden"}>
+                      <img src={data.image} alt="blog"></img>
+                    </div>
+                  </div>
+                  <div className="blog-text">{data.text}</div>
+                </div>
+                <div className="blog-footer">
+                  <div className="blog-link">
+                    <a
+                      href={data.link && data.link}
+                      target="_blank"
+                      rel="noopener noreferrer">
+                      {data.link && data.link}
+                    </a>
+                  </div>
                 </div>
               </div>
-              <div className="blog-body">
-                <div className="blog-illustration">
-                  <div className="blog-image"></div>
-                </div>
-                <div className="blog-text">{data.text}</div>
-              </div>
-              <div className="blog-footer">
-                <div className="blog-link">
-                  <a
-                    href={data.link && data.link}
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    {data.link && data.link}
-                  </a>
-                </div>
-              </div>
-            </div>
-          );
+            );
+          }
         })
       );
 
@@ -72,7 +78,7 @@ function Blog() {
       } else {
         setPrevious(null);
       }
-      
+
       setNumberOfPages(Math.ceil(blogListData.count / itemsPerPage));
     }
   }, [blogListData, pageNumber]);
