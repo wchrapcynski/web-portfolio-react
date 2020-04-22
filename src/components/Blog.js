@@ -7,7 +7,7 @@ function Blog() {
   const [next, setNext] = useState(null);
   const [previous, setPrevious] = useState(null);
   const [blogListUrl, setBlogListUrl] = useState(
-    "http://wchrapcynski.pythonanywhere.com/"
+    "http://www.wchrapcynski.net:8000"
   );
   const [pageNumber, setPageNumber] = useState(1);
   const [numberOfPages, setNumberOfPages] = useState(null);
