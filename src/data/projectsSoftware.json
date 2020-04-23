@@ -1,5 +1,13 @@
 [
 	{
+		"name": "Portfolio Blog",
+		"description": "Basic blog application using React, Django, Python, and AWS.",
+		"repoFrontLink": "https://github.com/wchrapcynski/web-portfolio-react",
+		"repoBackLink": "https://github.com/wchrapcynski/portfolio-blog",
+		"appLink": "http://magicaltech.xyz/",
+		"image": "portfolioblog-flip.png"
+	},
+	{
 		"name": "Mouse Fan Trivia",
 		"description": "Trivia game created with JS, CSS, and HTML.",
 		"repoFrontLink": "https://github.com/wchrapcynski/trivia_game",
