@@ -24,6 +24,19 @@ function Blog() {
       });
   };
 
+  const splitText = (text) => {
+    let textArray = text.split("\n");
+    let dateKey = new Date();
+    let newText = textArray.map((data, key) => {
+      if (data.includes("<p>")) {
+        return null;
+      } else {
+        return <p key={key + dateKey}>{data}</p>;
+      }
+    });
+    return newText;
+  };
+
   useEffect(() => {
     getPosts(blogListUrl);
   }, [blogListUrl]);
@@ -49,7 +62,7 @@ function Blog() {
                       <img src={data.image} alt="blog"></img>
                     </div>
                   </div>
-                  <div className="blog-text">{data.text}</div>
+                  <div className="blog-text">{splitText(data.text)}</div>
                 </div>
                 <div className="blog-footer">
                   <div className="blog-link">
@@ -64,6 +77,7 @@ function Blog() {
               </div>
             );
           }
+          return null;
         })
       );
 
