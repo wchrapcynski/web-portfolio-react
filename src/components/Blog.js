@@ -64,16 +64,18 @@ function Blog() {
                   </div>
                   <div className="blog-text">{splitText(data.text)}</div>
                 </div>
-                <div className="blog-footer">
-                  <div className="blog-link">
-                    <a
-                      href={data.link && data.link}
-                      target="_blank"
-                      rel="noopener noreferrer">
-                      {data.link && data.link}
-                    </a>
+                {data.link && (
+                  <div className="blog-footer">
+                    <div className="blog-link">
+                      <a
+                        href={data.link}
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        {data.link}
+                      </a>
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
             );
           }
