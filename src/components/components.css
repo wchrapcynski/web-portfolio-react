@@ -1,6 +1,7 @@
 .jumbotron {
   border: 1px solid rgb(214, 212, 212);
   width: 75vw;
+  max-width: 1200px;
   margin-top: 50px;
   padding: 50px;
   border-radius: 8px;
@@ -104,6 +105,7 @@
 
 .lead {
   padding-right: 20px;
+  margin-right: 2em;
 }
 
 .rightJumbo {
@@ -317,6 +319,10 @@ h5 a:hover {
   );
 }
 
+.portfolio-blog {
+  max-width: 1200px;
+}
+
 .blog-header {
   display: flex;
   justify-content: space-between;
@@ -382,6 +388,7 @@ h5 a:hover {
 /* smartphones, touchscreens */
 @media (hover: none) and (pointer: coarse) {
   .lead {
+    margin-right: 0;
     padding: 0;
   }
 
