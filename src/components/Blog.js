@@ -11,7 +11,16 @@ function Blog() {
   );
   const [pageNumber, setPageNumber] = useState(1);
   const [numberOfPages, setNumberOfPages] = useState(null);
+  const [pageWidth, setPageWidth] = useState(0)
   const itemsPerPage = 5;
+
+  window.onload = function() {
+    setPageWidth(window.innerWidth);
+  }
+
+  window.onresize = function() {
+    setPageWidth(window.innerWidth);
+  }
 
   const getPosts = (url) => {
     fetch(url)
@@ -71,7 +80,7 @@ function Blog() {
                         href={data.link}
                         target="_blank"
                         rel="noopener noreferrer">
-                        {data.link.length > 30
+                        {data.link.length > 30 && pageWidth < 600
                           ? data.link.substring(0, 29) + "..."
                           : data.link}
                       </a>
@@ -99,7 +108,7 @@ function Blog() {
 
       setNumberOfPages(Math.ceil(blogListData.count / itemsPerPage));
     }
-  }, [blogListData, pageNumber]);
+  }, [blogListData, pageNumber, pageWidth]);
 
   const nextPage = () => {
     setBlogListUrl(next);
