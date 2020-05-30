@@ -517,6 +517,9 @@ h5 a:hover {
   .blog-text, .card-body p, .leftJumbo {
     font-size: 0.9em;
   }
+  .blog-footer{
+    padding: 10px;
+  }
   .leftJumbo p {
     padding: 5px;
     font-size: 1.1em;

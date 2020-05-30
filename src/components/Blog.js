@@ -66,12 +66,14 @@ function Blog() {
                 </div>
                 {data.link && (
                   <div className="blog-footer">
-                    <div className="blog-link">
+                    <div className="blog-link">{"Link: "}
                       <a
                         href={data.link}
                         target="_blank"
                         rel="noopener noreferrer">
-                        {data.link.length > 30 ? (data.link.substring(0,29) + "...") : data.ink }
+                        {data.link.length > 30
+                          ? data.link.substring(0, 29) + "..."
+                          : data.link}
                       </a>
                     </div>
                   </div>
