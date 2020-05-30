@@ -71,7 +71,7 @@ function Blog() {
                         href={data.link}
                         target="_blank"
                         rel="noopener noreferrer">
-                        {data.link}
+                        {data.link.length > 30 ? (data.link.substring(0,29) + "...") : data.ink }
                       </a>
                     </div>
                   </div>
