@@ -323,6 +323,11 @@ h5 a:hover {
   max-width: 1200px;
 }
 
+.blog-banner {
+  text-align: center;
+  padding: 20px;
+}
+
 .blog-header {
   display: flex;
   justify-content: space-between;

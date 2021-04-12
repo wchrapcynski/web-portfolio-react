@@ -122,6 +122,9 @@ function Blog() {
 
   return (
     <div>
+      <div className="blog-banner">
+        Blog will currently only display for HTTP. <br />HTTPS migration is in progress.
+      </div>
       <div className="blog-pagination">
         <button
           className="blog-pagination-previous"
