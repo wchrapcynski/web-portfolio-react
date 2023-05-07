@@ -10,11 +10,6 @@
 		"image": "socialmedia-github.svg"
 	},
 	{
-		"name": "medium",
-		"link": "https://medium.com/@williamchrapcynski",
-		"image": "socialmedia-medium.svg"
-	},
-	{
 		"name": "resume",
 		"link": "http://magicaltech.xyz/WilliamChrapcynski-Resume-se.pdf",
 		"image": "resume.svg"

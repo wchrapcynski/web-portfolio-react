@@ -58,11 +58,12 @@ function App() {
             {displayProjectsMaker}
           </div>
         </div>
-        <div className="portfolio-blog">
+{/*        <div className="portfolio-blog">
           <div className="headline-text">Blog</div>
           <hr className="rule" />
           <Blog />
-        </div>
+        </div>}
+  */}
       </div>
       <Footer />
     </>

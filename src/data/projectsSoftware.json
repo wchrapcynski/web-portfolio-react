@@ -4,7 +4,7 @@
 		"description": "Basic blog application using React, Django, Python, and AWS.",
 		"repoFrontLink": "https://github.com/wchrapcynski/web-portfolio-react",
 		"repoBackLink": "https://github.com/wchrapcynski/portfolio-blog",
-		"appLink": "http://magicaltech.xyz/",
+		"appLink": "",
 		"image": "portfolioblog-flip.png"
 	},
 	{
@@ -28,7 +28,7 @@
 		"description": "Nintendo Amiibo product list created with a MERN stack.",
 		"repoFrontLink": "https://github.com/wchrapcynski/Amiibo-Front-End",
 		"repoBackLink": "https://github.com/wchrapcynski/Amiibo-API",
-		"appLink": "https://nostalgic-mestorf-ce37f7.netlify.com/",
+		"appLink": "",
 		"image": "amiibo-flip.png"
 	},
 	{
